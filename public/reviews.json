@@ -1,0 +1,38 @@
+[
+    {
+        "_id": 1,
+        "name": "Kabbo kazi",
+        "img": "https://www.linkpicture.com/q/RU-People-Photo-2-500x500.png",
+        "feedback": "Your product price is Inexpensive compare to other company's product."
+    },
+    {
+        "_id": 2,
+        "name": "John kabir",
+        "img": "https://www.linkpicture.com/q/gevb-500x500.jpg",
+        "feedback": "Your product not much premium , but value for money."
+    },
+    {
+        "_id": 3,
+        "name": "Joli suntana",
+        "img": "https://www.linkpicture.com/q/Khadija-Tall-headshot-500x500.jpg",
+        "feedback": "Your product is not as good as your marketing team said."
+    },
+    {
+        "_id": 4,
+        "name": "Tarin khan",
+        "img": "https://www.linkpicture.com/q/angelina-sutton-headshot-scaled-500x500.jpg",
+        "feedback": "I am using your monitor last three years and still it's working."
+    },
+    {
+        "_id": 5,
+        "name": "Harry CH",
+        "img": "https://www.linkpicture.com/q/Tarun-Kohli-500x500.png",
+        "feedback": "your product is good . But your service center is not available in my city."
+    },
+    {
+        "_id": 6,
+        "name": "Saba kh",
+        "img": "https://www.linkpicture.com/q/0291_bpp2021_rbevere-e1643912481843-500x500.jpg",
+        "feedback": "Your 24 inch monitor is good . But I think it's price higher than it's competitors"
+    }
+]
