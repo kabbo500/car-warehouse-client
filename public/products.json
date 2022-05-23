@@ -4,20 +4,53 @@
         "name": "computer casing large",
         "img": "https://www.linkpicture.com/q/8-500x500.jpg",
         "description": "Large 18*10 casing with, three 12 cm. cooling fan and power supply",
-        "minimum-order": 80,
+        "minimumOrder": 80,
         "quantity": 1130,
-        "price-perUnit": 3500
+        "pricePerUnit": 3500
     },
     {
         "_id": 2,
         "name": "Laptop charger",
         "img": "https://www.linkpicture.com/q/419-BfEnpSL.jpg",
         "description": "120 watt laptop charger adapter with two year warranty and...",
-        "minimum-order": 110,
+        "minimumOrder": 110,
         "quantity": 1410,
-        "price-perUnit": 650
+        "pricePerUnit": 650
     },
     {
-        "_id": 3
+        "_id": 3,
+        "name": "cpu cooling fan",
+        "img": "https://www.linkpicture.com/q/aorus-atc800.jpg",
+        "description": "It's a 16 mm. cooling fan with 2 years replacement warranty service. ",
+        "minimumOrder": 50,
+        "quantity": 650,
+        "pricePerUnit": 450
+    },
+    {
+        "_id": 4,
+        "name": "Mother board",
+        "img": "https://www.linkpicture.com/q/computer-motherboard-500x500.jpg",
+        "description": "Intel Twelve generation cor-i3 to i9 supported motherboard with 3 ram slot",
+        "minimumOrder": 40,
+        "quantity": 420,
+        "pricePerUnit": 18000
+    },
+    {
+        "_id": 5,
+        "name": "Power supplier",
+        "img": "https://www.linkpicture.com/q/csk-450-bronze-06-500x500-1.jpg",
+        "description": "Thousand Wat stain-less steel power supplier with three years warranty.",
+        "minimumOrder": 60,
+        "quantity": 1300,
+        "pricePerUnit": 5500
+    },
+    {
+        "_id": 6,
+        "name": "24 inch Monitor",
+        "img": "https://www.linkpicture.com/q/zowie-xl2411k-500x500-1.jpg",
+        "description": "Mini Ips Monitor, Flicker free display  with Blue light filter",
+        "minimumOrder": 30,
+        "quantity": 680,
+        "pricePerUnit": 22500
     }
 ]
