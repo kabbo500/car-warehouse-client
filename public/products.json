@@ -1,0 +1,23 @@
+[
+    {
+        "_id": 1,
+        "name": "computer casing large",
+        "img": "https://www.linkpicture.com/q/8-500x500.jpg",
+        "description": "Large 18*10 casing with, three 12 cm. cooling fan and power supply",
+        "minimum-order": 80,
+        "quantity": 1130,
+        "price-perUnit": 3500
+    },
+    {
+        "_id": 2,
+        "name": "Laptop charger",
+        "img": "https://www.linkpicture.com/q/419-BfEnpSL.jpg",
+        "description": "120 watt laptop charger adapter with two year warranty and...",
+        "minimum-order": 110,
+        "quantity": 1410,
+        "price-perUnit": 650
+    },
+    {
+        "_id": 3
+    }
+]
