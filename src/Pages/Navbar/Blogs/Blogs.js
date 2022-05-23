@@ -3,45 +3,47 @@ import './Blogs.css'
 const Blogs = () => {
     return (
         <div className='container mt-5'>
-            <h1 className='text-info d-flex justify-content-center mb-5'>Blogs Page</h1>
+            <h1 className='text-info d-flex justify-content-center mb-5 text-4xl font-bold'>Blogs Page</h1>
             <article>
-                <h3 className='text-primary mt-4 text-3xl'>1) Difference between javascript and nodejs ?</h3>
+                <h3 className='text-primary mt-4 text-3xl'>1) How will you improve the performance of a React Application?</h3>
                 <div>
-                    <p><b>Ans: <br /> </b> No-1: Javascript is a programming language.It is used for writing scripts for the website. </p>
-                    <p>While, NodeJS is a Javascript runtime environment</p>
+                    <p><b>No-1: Use Production Build</b> First way of optimizing a React app is by making sure you bundle the app for production before deploying. By default, the app is in development mode, which means React will include helpful warnings. This can be very useful while it's developing, but it can make the app size large and responses slower than usual </p>
                 </div>
                 <div>
-                    <p><b>No-2:</b>  Javascript can only be run in the browsers.</p>
-                    <p>But Javascript can run  outside the browser with the help of NodeJS.</p>
+                    <p><b>No-2: Use React.Lazy for Lazy Loading Components</b>Lazy loading is a great technique for optimizing and speeding up the render time of your app. The idea of lazy loading is to load a component only when it is needed. </p>
+
                 </div>
                 <div>
-                    <p><b>No-3: </b>Javascript is capable enough to add HTML and play with the DOM.
+                    <p><b>No-3: Use React.memo for Component Memoization</b>
+                        React.memo is a great way of optimizing performance as it helps cache functional components.In computing, memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
                     </p>
-                    <p>Nodejs does not have capability to add HTML tags.</p>
+
                 </div>
                 <div>
-                    <p><b>No-4</b>
-                        Javascript is used in frontend development.
+                    <p><b>No-4: Virtualize a Large List Using react-window</b>
+                        When you want to render an enormous table or list of data, it can significantly slow down your app's performance. Virtualization can help in a scenario like this with the help of a library like react-window. react-window helps solve this problem by rendering only the items in the list that are currently visible, which allows for efficiently rendering lists of any size.
                     </p>
-                    <p>Mostly Nodejs is used in server-side development.</p>
+
                 </div>
-                <div>
-                    <p><b>No-5</b>Javascript run with firefox safari and google chrome</p>
-                    <p>Node js run with google chrome v8 </p>
-                </div>
+
             </article>
             <article>
                 <h3 className='text-primary mt-4 text-3xl'>
-                    2)  When should you use nodejs and when should you use mongodb?
+                    2) What are the different ways to manage a state in a React application?
                 </h3>
-                <p><b>Ans:</b> <b>Node js:</b>Node.js is one of the most popular environments, taking the lead for the second consecutive year.Any project needs a programming environment and a runtime library that offers you basic programming tools/support and can compile and/or interpret your code. Nodejs is such as tool for the Javascript programming language.  </p>
+                <p> <b>Ans:</b> First we need to know , what is react state.React components have a built-in state object. The state is encapsulated data where you store assets that are persistent between component renderings.
+                    The state is just a fancy term for a JavaScript data structure.The built-in setState() method updates a variable's value in the classes' local store. This local store allows the updated variable values to be accessed by any function that may require these values.Hooks is one of the most outstanding features ever added to the React library since its creation. Hooks brought 'state' to functional components.The first on our list is Redux; It has been around for a while, pretty much the first react-based state management library.
+                    The state management library Redux was created to address the problem in our eCommerce app.</p>
 
-                <p><b>mongodb</b> MongoDB is a database engine. Code within some application or server uses MongoDB to save, query or update data sin a database. There are many web servers built with nodejs that will then use MongoDB for storing data.Suppose I am building a website and I need a database to store the data or information so here I can use MongoDB but to be connected with MongoDB </p>
 
             </article>
             <article>
-                <h3 className='text-primary mt-4 text-3xl'>3)  What is the purpose of jwt and how does it work?</h3>
-                <p> <b>Ans:</b> JWT full meaning JSON Web Token.It is an open standard used to share security information between two parties — a client and a server. JWTs differ from other web tokens in that they contain a set of claims. Claims are used to transmit information between two parties.What these claims are depends on the use case at hand. For example, a claim may assert who issued the token, how long it is valid for, or what permissions the client has been granted.When it comes to APIs, JWTs are the standard. They offer a compact and safe method of information exchange without the need for a centralized token database.</p>
+                <h3 className='text-primary mt-4 text-3xl'>3) How does prototypical inheritance work?</h3>
+                <p> <b>Ans:</b> JavaScript is a prototype-based, Object Oriented programming language. After the ES6 updates, JavaScript allowed for “prototypal inheritance”, meaning that objects and methods can be shared, extended, and copied.Sharing amid objects makes for easy inheritance of structure (data fields), behavior (functions / methods), and state (data values).
+
+                    JavaScript is the most common of the prototype-capable languages, and its capabilities are relatively unique. When used appropriately, prototypical inheritance in JavaScript is a powerful tool that can save hours of coding.For instance, we have a user object with its properties and methods, and want to make admin and guest as slightly modified variants of it. We'd like to reuse what we have in user, not copy/reimplement its methods, just build a new object on top of it.
+
+                    Prototypal inheritance is a language feature that helps in that.When we read a property from object, and it's missing, JavaScript automatically takes it from the prototype. In programming, this is called “prototypal inheritance”. And soon we'll study many examples of such inheritance, as well as cooler language features built upon it.</p>
             </article>
 
         </div>
