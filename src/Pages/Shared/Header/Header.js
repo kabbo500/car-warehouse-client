@@ -33,20 +33,20 @@ const Header = () => {
                             <Nav.Link
                                 as={Link} to="/about">About
                             </Nav.Link>
-                            {/* {
+                            {
                                 user && <>
                                     <Nav.Link
-                                        as={Link} to="/myItems">My Items
+                                        as={Link} to="/dashboard">Dashboard
                                     </Nav.Link>
-                                    <Nav.Link
+                                    {/* <Nav.Link
                                         as={Link} to="/addItem">Add Item
                                     </Nav.Link>
                                     <Nav.Link
                                         as={Link} to="/manageItem">Manage Item
-                                    </Nav.Link>
+                                    </Nav.Link> */}
                                 </>
 
-                            } */}
+                            }
 
 
 
@@ -65,6 +65,9 @@ const Header = () => {
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
+                <div>
+                    <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden font-bold">---</label>
+                </div>
             </Navbar>
         </>
 
