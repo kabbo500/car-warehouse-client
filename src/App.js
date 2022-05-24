@@ -8,6 +8,9 @@ import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import Blogs from './Pages/Navbar/Blogs/Blogs';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
+
     </div>
   );
 }
