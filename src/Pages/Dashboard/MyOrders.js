@@ -16,7 +16,7 @@ const MyOrders = () => {
     }, [user])
     return (
         <div>
-            <h1>This is app:{orders.length}</h1>
+            <h1 className='text-2xl font-bold text-primary'>My Orders</h1>
             <div class="overflow-x-auto">
                 <table class="table w-full">
 
@@ -32,8 +32,8 @@ const MyOrders = () => {
                     <tbody>
 
                         {
-                            orders.map(order => <tr>
-                                <th>1</th>
+                            orders.map((order, index) => <tr>
+                                <th>{index + 1}</th>
                                 <td>{order.customerName}</td>
                                 <td>{order.name}</td>
                                 <td>{order.address}</td>
