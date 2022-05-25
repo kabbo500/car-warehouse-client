@@ -1,5 +1,5 @@
 import { async } from '@firebase/util';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
@@ -8,6 +8,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
+import useToken from '../../hooks/useToken';
 import Loading from '../Shared/Loading/Loading';
 import SocialLogin from './SocialLogin/SocialLogin';
 
@@ -30,6 +31,16 @@ const Login = () => {
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
+    const [token] = useToken(user);
+
+
+    useEffect(() => {
+        if (token) {
+
+            navigate(from, { replace: true });
+        }
+    }, [token, from, navigate]);
+
     if (loading || sending) {
         return <Loading></Loading>
     }
@@ -51,7 +62,6 @@ const Login = () => {
         const password = passwordRef.current.value;
         await signInWithEmailAndPassword(email, password);
 
-        navigate(from, { replace: true });
     }
 
     const navigateRegister = event => {
