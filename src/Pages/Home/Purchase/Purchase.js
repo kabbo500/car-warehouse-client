@@ -8,7 +8,7 @@ import './Purchase.css'
 const Purchase = () => {
     const { id } = useParams();
     const [product, setProduct] = useState([]);
-    const { name, _id } = product;
+    const { name, pricePerUnit, _id } = product;
     const [user, loading, error] = useAuthState(auth);
     useEffect(() => {
         const url = `http://localhost:5000/product/${id}`;
@@ -24,6 +24,7 @@ const Purchase = () => {
         const booking = {
             productId: _id,
             name: name,
+            pricePerUnit,
             customer: user.email,
             customerName: user.displayName,
             quantity: event.target.quantity.value,
