@@ -18,7 +18,7 @@ const Header = () => {
                     <Navbar.Brand
                         as={Link}
                         to="/">
-                        <img src='https://www.linkpicture.com/q/download_431.png' alt="" />
+                        <img src='https://www.linkpicture.com/q/pngtree-electronic-logo-design-png-image_2380874.png' alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

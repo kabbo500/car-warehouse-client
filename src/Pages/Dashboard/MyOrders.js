@@ -55,7 +55,7 @@ const MyOrders = () => {
     }, [user])
     return (
         <div>
-            <h1 className='text-2xl font-bold text-primary'>My Orders</h1>
+            <h1 className='text-2xl font-bold text-primary my-8'>My Orders</h1>
             <div class="overflow-x-auto">
                 <table class="table w-full">
 
