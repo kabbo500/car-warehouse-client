@@ -10,6 +10,27 @@ const MyOrders = () => {
     const navigate = useNavigate();
 
 
+    //Delete orders before payment
+
+    const handleDelete = id => {
+        const proceed = window.confirm("Are you sure?");
+        if (proceed) {
+            const url = `http://localhost:5000/booking/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    const remaining = orders.filter(order => order._id !== id);
+                    setOrders(remaining);
+
+                })
+
+        }
+    }
+
+
     useEffect(() => {
         if (user) {
             fetch(`http://localhost:5000/booking?customer=${user.email}`, {
@@ -45,6 +66,7 @@ const MyOrders = () => {
                             <th>Product</th>
                             <th>Address</th>
                             <th>Mobile</th>
+                            <th>Delete</th>
                             <th>Payment</th>
                         </tr>
                     </thead>
@@ -57,6 +79,9 @@ const MyOrders = () => {
                                 <td>{order.name}</td>
                                 <td>{order.address}</td>
                                 <td>{order.phone}</td>
+                                <td>{(order.pricePerUnit && !order.paid) &&
+                                    <button onClick={() => handleDelete(order._id)} className='btn btn-xs'>Delete</button>
+                                }</td>
                                 <td>{(order.pricePerUnit && !order.paid) && <Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-xs btn-success'>pay</button></Link>}
                                     {(order.pricePerUnit && order.paid) &&
                                         <div>
