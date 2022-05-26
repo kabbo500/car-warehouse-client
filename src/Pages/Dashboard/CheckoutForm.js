@@ -13,7 +13,7 @@ const CheckoutForm = ({ order }) => {
   const { _id, pricePerUnit, customer, customerName } = order;
 
   useEffect(() => {
-    fetch('http://localhost:5000/create-payment-intent', {
+    fetch('https://boiling-tor-55040.herokuapp.com/create-payment-intent', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
@@ -80,7 +80,7 @@ const CheckoutForm = ({ order }) => {
         order: _id,
         transactionId: paymentIntent.id
       }
-      fetch(`http://localhost:5000/booking/${_id}`, {
+      fetch(`https://boiling-tor-55040.herokuapp.com/booking/${_id}`, {
         method: 'PATCH',
         headers: {
           'content-type': 'application/json',
@@ -147,7 +147,7 @@ export default CheckoutForm;
 //   const { pricePerUnit } = order;
 
 //   useEffect(() => {
-//     fetch('http://localhost:5000/create-payment-intent', {
+//     fetch('https://boiling-tor-55040.herokuapp.com/create-payment-intent', {
 //       method: 'POST',
 //       headers: {
 //         'content-type': 'application/json',

@@ -11,7 +11,7 @@ const Purchase = () => {
     const { name, pricePerUnit, _id } = product;
     const [user, loading, error] = useAuthState(auth);
     useEffect(() => {
-        const url = `http://localhost:5000/product/${id}`;
+        const url = `https://boiling-tor-55040.herokuapp.com/product/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
@@ -32,7 +32,7 @@ const Purchase = () => {
             address: event.target.address.value
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://boiling-tor-55040.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

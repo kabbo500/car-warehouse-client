@@ -15,7 +15,7 @@ const MyOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are you sure?");
         if (proceed) {
-            const url = `http://localhost:5000/booking/${id}`;
+            const url = `https://boiling-tor-55040.herokuapp.com/booking/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -33,7 +33,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?customer=${user.email}`, {
+            fetch(`https://boiling-tor-55040.herokuapp.com/booking?customer=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

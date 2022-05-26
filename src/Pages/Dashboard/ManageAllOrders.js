@@ -12,7 +12,7 @@
 
 //     useEffect(() => {
 //         if (user) {
-//             fetch(`http://localhost:5000/booking`, {
+//             fetch(`https://boiling-tor-55040.herokuapp.com/booking`, {
 //                 method: 'GET',
 //                 headers: {
 //                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

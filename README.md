@@ -1,3 +1,29 @@
+ # Project name: Parts manufacturing website
+
+ # Technology use in this project
+  1. Node js.
+  2. firebase.
+  3. Heroku .
+  4. Mongodb.
+  
+  # Live website link: 
+   [https://parts-manufacturing-dfcfe.web.app/]
+
+   # What i do in this project
+    * First i create navbar and home banner.
+    * Then Then create login system and signUp
+    * After that load all product data and review data.
+    * Then login mongodb and deploy data
+    * Then create server site and jwt
+    * Then create payment system and admin
+  
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
