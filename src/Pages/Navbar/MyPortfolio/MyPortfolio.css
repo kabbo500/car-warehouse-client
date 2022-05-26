@@ -1,0 +1,7 @@
+.portFolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}

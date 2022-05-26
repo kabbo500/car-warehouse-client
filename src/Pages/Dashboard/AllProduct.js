@@ -1,8 +1,27 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 
 const AllProduct = ({ product }) => {
     const { name, img, description, quantity, minimumOrder, pricePerUnit } = product;
+
+    const [products, setProducts] = useState([]);
+
+    const handleDelete = id => {
+        const proceed = window.confirm("Are you sure?");
+        if (proceed) {
+            const url = `http://localhost:5000/product/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    const remaining = products.filter(product => product._id !== id);
+                    setProducts(remaining);
+
+                })
+
+        }
+    }
 
     return (
         <div class="card lg:max-w-lg bg-base-100 shadow-xl">
@@ -16,8 +35,7 @@ const AllProduct = ({ product }) => {
                 <p>Minimum-Order: {minimumOrder}</p>
                 <p className='font-bold'>Price-Per Unit: {pricePerUnit}</p>
                 <div class="card-actions">
-                    <Link to={`/purchase/${product._id}`}><button class="btn btn-red-danger">Delete</button></Link>
-
+                    <button onClick={() => handleDelete(product._id)} class="btn btn-red-danger">Delete</button>
                 </div>
             </div>
         </div>

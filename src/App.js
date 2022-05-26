@@ -20,6 +20,8 @@ import AddProduct from './Pages/Dashboard/AddProduct';
 import ManageAllOrders from './Pages/Dashboard/ManageAllOrders';
 import ManageProducts from './Pages/Dashboard/ManageProducts';
 import Payment from './Pages/Dashboard/Payment';
+import NotFound from './Pages/Shared/NotFound/NotFound';
+import MyPortfolio from './Pages/Navbar/MyPortfolio/MyPortfolio';
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/purchase/:id' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/myPortfolio' element={<MyPortfolio></MyPortfolio>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='dashboard' element={<RequireAuth>

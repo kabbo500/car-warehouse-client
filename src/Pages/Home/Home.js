@@ -3,6 +3,7 @@ import useProducts from '../../hooks/useProducts';
 import useReviews from '../../hooks/useReviews';
 import Banner from './Banner/Banner';
 import Product from './Product/Product';
+import Promotion from './Promotion/Promotion';
 import Purchase from './Purchase/Purchase';
 import Review from './Review/Review';
 
@@ -33,6 +34,7 @@ const Home = () => {
 
                 </div>
             </div>
+            <Promotion></Promotion>
         </div>
     );
 };
