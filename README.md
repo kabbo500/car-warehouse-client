@@ -1,5 +1,9 @@
  # Project name: Parts manufacturing website
 
+  # Admin 
+   * Email: rana@gamil.com
+   * Password: 123456
+
  # Technology use in this project
   1. Node js.
   2. firebase.
@@ -9,13 +13,12 @@
   # Live website link: 
    [https://parts-manufacturing-dfcfe.web.app/]
 
-   # What i do in this project
-    * First i create navbar and home banner.
-    * Then Then create login system and signUp
-    * After that load all product data and review data.
-    * Then login mongodb and deploy data
-    * Then create server site and jwt
-    * Then create payment system and admin
+  # Features: 
+       * It has two authentication systems, Google & email, and pass 
+       * Password reset and email verification system 
+       * Dashboard with the private route and show different data by the client or admin
+       * Payment system has been implemented in this project
+
   
 
 
