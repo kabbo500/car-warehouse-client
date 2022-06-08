@@ -1,7 +1,7 @@
  # Project name: Parts manufacturing website
 
   # Admin 
-   * Email: rana@gamil.com
+   * Email: rana@gmail.com
    * Password: 123456
 
  # Technology use in this project
