@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Banner = () => {
-    const url2 = "https://www.linkpicture.com/q/hardware-Banner.jpg";
+    const url2 = "https://www.linkpicture.com/q/electronics-store-poster-banner-design-vector-30729880.jpg";
     return (
 
         <div>
